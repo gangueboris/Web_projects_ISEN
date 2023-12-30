@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,200;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,200;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: Montserrat;
+}
+
+body{
+    margin:0 auto;
+}
+header img{
+   width: 100px;   /* Réduire la taille de 100px*/
+}
+header{
+    display: flex; /*Mettre les items du header côte à côte*/
+    align-items: center; /*centré les éléments du header*/
+
+}
+section.top-page{
+    background: url('../images/bg.jpg');
+    height: 100vh; /*Pour augmenter la hauteur en background (vh:viewhight)*/
+    background-size: cover;/*Transformer l'image en bg comme couverture pour éviter de déformer l'imge quand on le déforme*/
+}
+
+/*landing-page*/
+.landing-page {
+    padding: 20px 80px /*espacement(hauteur bord)*/
+}
+.big-title{
+    color: white;
+    font-size: 80px; /*taille du texte*/
+    font-family: 'Abril FatFace',cursive;
+   
+
+a.scroll{
+    text-decoration: none;
+    color: blue;
+}
+}
+nav{
+    display: flex;/*contient des items qui peuvent être mit en colonne ou en ligne(mets les elements les uns à côté des autres*/
+    justify-content: space-between; /*espacer les elements de la liste*/
+    list-style: none;/* Retirer les puces*/ 
+    margin-left: 30px;/* mettre un espace a gauche du nav*/  
+}
+nav li{
+    color: white;
+    margin: 0 15px; /* Ajout d'une marge entre les éléments de la liste */
+    cursor: pointer; /* Ajout d'un curseur pointer pour indiquer que les éléments sont cliquables */
+}
+
+/*  Services  */
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin:50px;
+   
+
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.delivery-icon {
+    font-size: 35px;
+    color: #ADD981;
+}
+.service-details {
+    text-align: center;
+}
+
+/* Best-items */
+.section-title {
+    font-size: 50px;
+    font-family: cursive;
+    position: relative;
+}
+
+.section-title::before { 
+    content: "";
+    position:absolute; /*A cause du deplacement */
+    width:50px;
+    height:7px;
+    background-color: #ADD981;
+    bottom: 0;
+}
+.best-plants {
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap; /*Pour mettre les img en dessous*/
+         
+
+}
+.best-items {
+    margin: 60px;
+    
+}
+.plants-box {
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex:1;
+}
+.plant1 {
+    background-image:url(../images/nos_meilleures_ventes/1.jpg);
+
+}
+.plant2 {
+    background-image:url(../images/nos_meilleures_ventes/2.jpg);
+
+}
+.plant3 {
+    background-image:url(../images/nos_meilleures_ventes/3.jpg);
+
+}
+.plant4 {
+    background-image:url(../images/nos_meilleures_ventes/4.jpg);
+
+}
