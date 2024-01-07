@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+    font-family: 'Kumbh Sans',sans-serif ;
+}
+
+.navbar{
+    /*Toujours appliqué ces propriétés au navbar*/
+    background: #131313;
+    height: 80px;
+    display: flex; /*Je rends tout les tout elements sdu nav flexsible*/
+    justify-content:center; /*Et maintenant je fais ce que je veux sur eux ( agit sur l'axe horizontal du conteneur flexible*/
+    align-items: center;  /*Agit sur l'axe vertical du conteneur flexible (même rôle que justify-content)*/
+    font-size: 1.2rem;
+    position: sticky; /*Elément(noraml & fixed) reste dans le flux normal du document jusqu'à ce que son bloc de conteneur atteigne un certain point pendant le défilement*/
+    top: 0; /*La position à laquelle l'élément deviendra fixe (Toujours resté en haut de la page lors du défilement*/
+    z-index: 999;/*Définie l'ordre de compilation/affichage de ce conteneur:(sonz-index estNB, ca ne marche que sur les elements qui ont une position != de static*/
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between; /*Separe tout les elements du conteneur a un distance équitable*/
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin:0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo{
+    background-color:#ff8177;
+    background-image:linear-gradient(to top,#ff0844 0%,#ffb199 100%);
+}
