@@ -30,13 +30,15 @@
 }
 /*Astuces pour mettre un couleur gradient en font d'un text pour creer un logo*/
 #navbar_logo{
+    /*------------------------------------------------------------------------------------------------------------*/
     background-color:#ff8177;
-    background-image:linear-gradient(to top,#ff0844 0%,#ffb199 100%);
     background-size: 100%;
+    background-image:linear-gradient(to top,#ff0844 0%,#ffb199 100%);
     -webkit-background-clip: text; /*Permet de specifier l'élément auquelle on défini le bg*/
     -moz-background-clip: transparent;
     -webkit-text-fill-color: transparent; /*rend le text transparent*/
     -moz-text-fill-color: transparent;
+    /*------------------------------------------------------------------------------------------------------------*/
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -47,6 +49,11 @@
 .fa-gem{
     margin-right: 0.5rem;
 }
+ .navbar_gem{
+    height: 50px;
+    width: 50px;
+    
+ }
 .navbar_menu{
     display: flex;
     align-items: center;
@@ -116,13 +123,13 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        /*top: -1000px;
-        opacity: 0;*/
+        top: -1000px;
+        opacity: 0;
         transition: all 0.3s ease;
         height: 50vh;
         z-index: -1;
         background:#131313;
-    }
+    } 
     .navbar_menu.active{
         background:#131313;
         top: 100%;
@@ -173,5 +180,14 @@
     .navbar_toggle .bar {
         display: block; /*Pour afficher les trois traits des sites*/
         cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
