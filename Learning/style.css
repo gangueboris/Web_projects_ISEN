@@ -206,6 +206,7 @@
     margin: 0 auto;
    /* 90% of the screen */
     width:100%;
+    max-width:  400px;
     background-color: #131313;
     padding: 0 50px ;
 }
@@ -229,6 +230,7 @@
 
 .main_container_content p{
     color: #fff;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -244,6 +246,8 @@
     padding: 14px 32px;
     border: none;
     border-radius: 4%;
+    transition:all 0.35s ;
+    outline: none;
 }
 
 .main_btn a{
@@ -254,7 +258,7 @@
     font-weight: 600;
     color: #fff;
 }
-.main_btn::after{
+.main_btn:after{
     position: absolute;
     content: "";
     top: 0;
@@ -268,4 +272,95 @@
 
 .main_btn:hover{
     color:#fff;
+}
+
+.main_btn:hover:after {
+    width: 100%;
+}
+
+.main_container_img{
+    text-align: center;
+}
+
+#main_img {
+    height:80%; /* La hauteur s'ajustera automatiquement pour maintenir les proportions de l'image */
+    width: 80%;  /*La largeur maximale de l'image sera égale à la largeur du conteneur parent */
+}
+
+
+/*Mobile responsive*/
+@media screen and (max-width:760px){
+    .main_container{
+        display: grid;
+        grid-template:auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+    .main_container_content{
+        text-align: center;
+        margin-bottom: 4rem;
+    } 
+
+    .main_container_content h1{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    } 
+
+    .main_container_content h2{
+        font-size: 3rem;
+    }
+    .main_container_content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    } 
+}
+
+@media screen and (max-width:480px){
+    .main_container_content h1{
+        margin-top: 3rem;
+        font-size: 2rem;
+    } 
+
+    .main_container_content h2{
+        font-size: 2rem;
+    }
+    .main_container_content p{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    } 
+    .main_btn{
+        padding:12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/*Services section*/
+
+.services{
+    background:#141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1{
+    background: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%,#ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom:5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
