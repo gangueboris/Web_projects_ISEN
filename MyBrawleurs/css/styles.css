@@ -1,34 +1,73 @@
 
-body{
-    background-color:#FAB80F;
-    margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
 }
-.top-page{
-    margin: 50px 500px;
-}
-nav{
+
+.navbar{
+    background: #141414;
     display: flex;
-    padding: 25px;
-    justify-content:space-between;
-    font-family: 'Irish Grover', cursive;
-    font-weight:bold;
-    color: aliceblue;      
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position:sticky;
+    font-size: 1.2rem;
+    top: 0;
 }
-/**/
-.top-p{
-    background-color:rgb(226, 128, 10);
-    width: 400px;
-    height: 25px;
-    border-radius: 15px;
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo{
+  background-color: #FFA500;
+  background-image:linear-gradient(to top, #ffa400 0%, #1e00b5 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -moz-text-fill-color:transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
     text-align: center;
-    color: black;
-    text-decoration: none;
+    list-style: none;
 }
-.welcome{
-    background-image:url(../images/welcome_752_385.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 752px;
-    height:385px;   
+
+.navbar_item{
+    height: 80px;
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: #ffa400;
+    border-radius: 4%;
+    padding: 10px 20px;
+    color: #fff;
 }
