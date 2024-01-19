@@ -1,0 +1,42 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    height: 80px;
+    position:sticky;
+    top:0;
+    font-size: 1.2rem;
+}
+.navbar_container{
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar_logo{
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #FFFF00;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.fa-gamepad{
+    margin-right: 0.5rem;
+}
