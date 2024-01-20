@@ -40,3 +40,56 @@
 .fa-gamepad{
     margin-right: 0.5rem;
 }
+.navbar_menu{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1rem;   
+}
+.navbar_link:hover{
+    color:#FFFF00;
+    transition: all 0.3s ease;
+}
+.navbar_btn{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+.navbar_button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFF00;
+    border: 2px solid #FFFF00; 
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+.navbar_button:hover{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+/*Three bar for mobile*/
+@media screen and (max-width:960px){
+    .navbar_container{
+       display:flex;
+       justify-content: space-between;
+       height: 80px;
+       width:100%;
+       padding: 0 1.5rem;
+    }
+    
+}
