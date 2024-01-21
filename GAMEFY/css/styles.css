@@ -1,6 +1,8 @@
  *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
  }
 
 .navbar{
@@ -43,19 +45,23 @@
 .navbar_menu{
     display: flex;
     align-items:center;
-    justify-content:space-between;
-    width: 25%;
-    list-style: none;
-    text-align: center;
+    justify-content:flex-end;
+    width: 100%;
 }
-
+.navbar_item{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width: 100%;
+   max-width: 250px;
+  
+}
 .navbar_link{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    text-decoration: none;
     color: #fff;
-    padding: 0 1rem;   
+     
 }
 .navbar_link:hover{
     color:#FFFF00;
@@ -63,33 +69,109 @@
 }
 .navbar_btn{
     display: flex;
+    justify-content:center;
     align-items: center;
-    margin-left: 1.5rem;
+    max-height: 50px;
 }
 .navbar_button{
     display: flex;
-    justify-content:center;
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #FFFF00;
     border: 2px solid #FFFF00; 
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 .navbar_button:hover{
-    color: #fff;
-    transition: all 0.3s ease;
+    background: #f0f0f079;
+    transition: all 0.3s ease ;
 }
-/*Three bar for mobile*/
-@media screen and (max-width:960px){
-    .navbar_container{
-       display:flex;
-       justify-content: space-between;
-       height: 80px;
-       width:100%;
-       padding: 0 1.5rem;
+
+
+@media screen and (max-width:960px){ /* spécifie des styles à appliquer lorsque la largeur de l'écran est égale ou inférieure à 960 pixels*/
+    .navbar_container {
+        display: flex;
+        justify-content:space-between;
+        height: 80px;
+        z-index:1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }  
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        height: 50vh;
+        z-index: -1;
+        background:#131313;
+    } 
+    .navbar_menu.active{
+        background:#131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size:1.6rem;
     }
-    
+    #navbar_logo{
+        padding-left: 25px;
+    }
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition:all 0.3s ease-in-out;
+        background: #fff;
+    }
+    .navbar_item{
+        width: 100%;
+    }
+
+    .navbar_links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display:table ; /*... transforme le <a></a> en conteneur*/ 
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%); /*Cette fonction de translation déplace l'élément horizontalement de 5% de sa propre largeur vers la droite et verticalement de 20% de sa propre hauteur vers le bas*/
+    }
+    .navbar_btn{
+        padding-bottom: 2rem;
+    }
+
+    .navbar_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+    .navbar_toggle .bar {
+        display: block; /*Pour afficher les trois traits des sites*/
+        cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
