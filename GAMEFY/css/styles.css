@@ -91,79 +91,67 @@
 
 
 @media screen and (max-width:960px){ /* spécifie des styles à appliquer lorsque la largeur de l'écran est égale ou inférieure à 960 pixels*/
-    .navbar_container {
+    .navbar_container{
         display: flex;
         justify-content:space-between;
         height: 80px;
-        z-index:1;
         width: 100%;
         max-width: 1300px;
         padding: 0;
     }  
 
     .navbar_menu{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-between;
+        width:100%;
         position: absolute;
-        top: -1000px;
-        opacity: 0;
+        top: -1000px;    /**/
         transition: all 0.3s ease;
-        height: 50vh;
-        z-index: -1;
         background:#131313;
     } 
     .navbar_menu.active{
-        background:#131313;
+        width: 100%;
+        background:#1313139e;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 390px;
         font-size:1.6rem;
     }
     #navbar_logo{
         padding-left: 25px;
     }
-    .navbar_toggle .bar{
+
+    .navbar_item{
+        width: 100%;
+    }
+
+    .navbar_link{
+        text-align:center;
+        padding:2rem;
+        width: 100%;  
+    }
+    .navbar_toggle .bar {
+        display: block; /*Pour afficher les trois traits des sites*/
+        cursor: pointer;
+    }
+    /*       Bar       */
+    .bar{
         width: 25px;
         height: 3px;
         margin: 5px auto;
         transition:all 0.3s ease-in-out;
         background: #fff;
     }
-    .navbar_item{
-        width: 100%;
-    }
-
-    .navbar_links{
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display:table ; /*... transforme le <a></a> en conteneur*/ 
-    }
+    /*- Position of three span bar */
     #mobile-menu{
         position: absolute;
         top: 20%;
-        right: 5%;
+        right:5%;
         transform: translate(5%, 20%); /*Cette fonction de translation déplace l'élément horizontalement de 5% de sa propre largeur vers la droite et verticalement de 20% de sa propre hauteur vers le bas*/
-    }
-    .navbar_btn{
-        padding-bottom: 2rem;
-    }
-
-    .navbar_button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-    .navbar_toggle .bar {
-        display: block; /*Pour afficher les trois traits des sites*/
-        cursor: pointer;
     }
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
@@ -174,4 +162,16 @@
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .navbar_btn{
+        padding-bottom: 2rem;
+    }
+    .navbar_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        width: 100%;
+        height: 80px;
+    }
+  
 }
