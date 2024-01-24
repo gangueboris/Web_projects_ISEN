@@ -242,3 +242,38 @@
         align-items: center;
     }
 }
+
+/* check */
+.check{
+    position: relative;
+    background: #141414;
+    color: #fff;
+    height:250px;
+} 
+.check_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.check_container{
+    display: flex;
+    
+
+}
+
+.check_title{
+    text-align: center;
+}
+.check_row{
+    display:grid;
+    grid-template-columns: 1f 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.check_img{
+    height: 150px;
+    width: 150px;
+}
