@@ -245,35 +245,43 @@
 
 /* check */
 .check{
-    position: relative;
     background: #141414;
     color: #fff;
-    height:250px;
+    padding: 2rem 0 0 5rem;
 } 
 .check_grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
+    margin:50px 10px 30px 10px;
+    gap :25px;
 }
 .check_container{
     display: flex;
-    
-
-}
-
-.check_title{
     text-align: center;
-}
-.check_row{
-    display:grid;
-    grid-template-columns: 1f 1fr;
     justify-content: center;
-    align-items: center;
+    background: #201c1cc5;
+    padding: 10px;
+
 }
+.check_text{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.check_title{
+    text-align: left;
+    font-size: 2rem;
+}
+
 .check_img{
     height: 150px;
     width: 150px;
+    object-fit: cover;
+}
+.check_text_H{
+    padding: 1rem 0;
+    font-size: 1.5rem;
 }
