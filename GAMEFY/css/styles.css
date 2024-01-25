@@ -247,7 +247,7 @@
 .check{
     background: #141414;
     color: #fff;
-    padding: 2rem 0 0 5rem;
+    padding: 2rem 0 2rem 5rem;
 } 
 .check_grid{
     display:grid;
