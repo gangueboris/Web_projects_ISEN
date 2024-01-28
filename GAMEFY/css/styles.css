@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family:'Segoe UI';
  }
 
 .navbar{
@@ -263,6 +264,12 @@
     padding: 10px;
 
 }
+ 
+.check_container:hover{
+    transform: scale(1.075); /*If I want to bring image in front when I click on itHover effect on img */
+    transition: 0.2s ease-in;
+    cursor:pointer;
+}
 .check_text{
     display: flex;
     flex-direction:column;
@@ -443,11 +450,13 @@
     border: 2px solid #000000;
     box-shadow: 0px 0px 10px 5px #ffff0098;
 }
+
 .part4_btn a{
     color: #141414;
     font-size: 15px;
     font-weight: 700;
 }
+ 
 .part4_explore{
     color: #FFFF00;
     text-align: center;
