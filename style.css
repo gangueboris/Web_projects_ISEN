@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    color:  #fff;
+    background: #181818;
+}
+
+/*------------------------------------------------Navbar------------------------------------------------------*/
+.navbar{
+   
+    z-index: 999;
+}
+
+.navbar_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 42px; 
+    padding: 30px 20px;
+}
+
+.navbar_head figure img{
+    border-radius: 20px;
+    height: 33px;
+    width: 33px;
+}
+.navbar_link{
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+
+}
+.navbar_link a{
+    position: relative;
+    background-color: #222222;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 30px;
+    overflow-x: hidden;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/*------------------------------------------------Play list------------------------------------------------------*/
+.play_list{
+    padding: 30px 20px;
+}
+.play_list_recently{
+    display: flex;
+    align-items: center;
+}
+.play_list h3{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.play_list_img{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.play_list figure img{
+    width: 169px;
+    height: 165.45px;
+    border-radius: 6px;
+}
+.play_list figure h2{
+    padding: 5px;
+}
+.play_list figure p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*------------------------------------------------Footer------------------------------------------------------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+footer a i{
+   margin-right: 8px;
+}
+footer a:hover{
+    color: #1ED760;
+    transition: 0.2s ease;
+
+}
+footer a i:hover{
+    background: #1ED760;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}

@@ -180,7 +180,10 @@
 /*---------------------------------------------- Wrapper form ---------------------------------------*/
 .wrapper{
     background: #141414;
+    display: flex;
+    justify-content: center;
 }
+/*
 .wrapper_container{
     position: relative;
     width: 400px;
@@ -193,13 +196,19 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /*overflow: hidden;
 }
 
-.wrapper .form_box {
+.wrapper_container .form_box {
     width:100%;
     padding: 40px;
 }
+
+.wrapper_container .form_box.login {
+    display: none;
+}
+
+
 .wrapper_container .icon_close{
     position:absolute;
     top: 0;
@@ -311,7 +320,7 @@
     text-decoration: none;
 
 }
-
+*/
 
 
 
