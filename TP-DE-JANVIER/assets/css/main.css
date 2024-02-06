@@ -115,3 +115,37 @@ footer a i:hover{
     border-radius: 20px;
     transition: 0.4s ease;
 }
+
+
+/*Mobile adapatation*/
+
+@media screen and (max-width:960px){
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+    }
+    
+    footer a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    footer a i{
+       margin-right: 8px;
+    }
+    footer a:hover{
+        color: #1ED760;
+        transition: 0.2s ease;
+    
+    }
+    footer a i:hover{
+        background: #1ED760;
+        border-radius: 20px;
+        transition: 0.4s ease;
+    }
+
+
+}
