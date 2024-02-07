@@ -69,3 +69,18 @@ audio.addEventListener('timeupdate',function (){
 
 
 });
+
+
+var audio = document.getElementById("audio");
+var playing = false;
+
+var playButton = document.getElementById("playbutton");
+playbutton.onclick = function() {
+  if (playing) {
+    audio.pause();
+  }
+  else {
+    audio.play();
+  }
+  playing = !playing;
+}

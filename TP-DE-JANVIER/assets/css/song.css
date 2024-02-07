@@ -1,589 +1,227 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/TP-DE-JANVIER/assets/img/album/cover/songimage.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-
-main {
-  height: 25%;
-  width: 100%;
-  background-color: #1E1E1E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-section, .title, .artist, .progress, .controller, .subcontroller, footer, .fade {
-  display: flex;
-  align-items: center;
-}
-
-
-main, .fade {
-  animation: bienvenualhotelwoaouh 1s;
-}
-
-
-@keyframes bienvenualhotelwoaouh {
-  from {
-      transform: translateY(550px);
-  }
-  to {
-      transform: translateY(0);
-  }
-}
-
-.fade {
-  height: 25%;
-  width: 100%;
-  background-color: #1E1E1E;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,  #1E1E1E 100%); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-section {
-  flex-direction: column;
-  width: 100%;
-  gap: 0.5em;
-}
-
-.title {
-  color: white;
-  font-size: 2em;
-  gap: 1em;
-}
-
-.artist {
-  color: #FFFFFF7A;
-}
-
-.controller {
-justify-content: space-around;
-width: 90%;
-}
-
-.subcontroller {
-  gap: 1em;
-}
-
-footer {
-  gap: 4em;    
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:hover{
-  color: #1ED760;
-  transition: 0.2s ease;
-}
-
-/*
-figure {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.song-header img {
-  width: 100%;
-  height: 750px;
-  object-fit:cover;
-
-}
-
-.container {
-  max-width: 100%;
-  margin:auto;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.song-info {
-  display: flex;
-  padding-top: 20px;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.song-info>h1 {
-  font-size: 50px;
-  
-}
-
-.song-info>p {
-  font-size: 35px;
-  color: #FFFFFF7A;
-  padding-top: 15px;
-}
-
-.controller{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 50px;
-}
-.title{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 50px;
-  font-size: 50px;
-}
-
-.shufflebutton{
-  order: 0;
-}
-
-.prevbutton{
-  order: 1;
-  margin-left: 800px;
-}
-
-.playbutton{
-  order: 2;
-  margin-left: 150px;
-}
-
-.nextbutton{
-  order: 3;
-  margin-left: 150px;
-}
-
-.repeatbutton{
-  order: 4;
-  margin-left: 800px;
-}
-
-// ------------------------------------------------Footer------------------------------------------------------
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:50px;
-}
-
-footer a{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-footer a i{
- margin-right: 8px;
-}
-footer a:hover{
-  color: #1ED760;
-  transition: 0.2s ease;
-
-}
-footer a i:hover{
-  background: #1ED760;
-  border-radius: 20px;
-  transition: 0.4s ease;
-}
-*/
-
-
-
-
-
-
-/* *{
+*{
     margin: 0;
     padding: 0;
-    text-decoration: none; 
-    color:  #fff;
-    background: #181818;
-    font-weight: bold;
-}
-
-
-.player{
-    height: 95vh;
-    margin: 0;
-    padding: 0;
+    font-style: none;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    width: 100vw;
+.big-container{
+    background: #151515;
+}
+.padding{
+    padding: 0 15px;
+
+}
+.img_background{
+    width: 100%;
     height: 100vh;
     background-image: url("/TP-DE-JANVIER/assets/img/album/cover/songimage.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     overflow: hidden;
 }
 
-main {
-    height: 25%;
-    width: 100%;
-    background-color: #1E1E1E;
+section,.title, .artist, .progress, .controller, .subcontroller, .fade {
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
+    width: 100%;
+    gap: 0.5em;
+  }
+  
 
-section, .title, .artist, .progress, .controller, .subcontroller, footer, .fade {
+.progress {
+    color: white;
+    width: 100%;
     display: flex;
-    align-items: center;
-}
+    justify-content: center;
+    gap: 0.75em;
+  }
 
+.progress .bar {
+    height: 2px;
+    width: 62.5%;
+    background-color: #C3C3C3;
+  }
 
-main, .fade {
+  main, .fade {
     animation: bienvenualhotelwoaouh 1s;
-}
-
-
-@keyframes bienvenualhotelwoaouh {
+  }
+  
+  
+  @keyframes bienvenualhotelwoaouh {
     from {
         transform: translateY(550px);
     }
     to {
         transform: translateY(0);
     }
-}
-
-.fade {
+  }
+  
+  .fade {
     height: 25%;
     width: 100%;
     background-color: #1E1E1E;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,  #1E1E1E 100%); 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,  #1E1E1E 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
+  }
 
-section {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5em;
-}
-
-.title {
+  .title {
     color: white;
     font-size: 2em;
     gap: 1em;
-}
-
-.artist {
-    color: #FFFFFF7A;
-}
-
-.controller {
-  justify-content: space-around;
-  width: 90%;
-}
-
-.subcontroller {
-    gap: 1em;
-}
-
-footer {
-    gap: 4em;    
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover{
-    color: #1ED760;
-    transition: 0.2s ease;
-}
-
-/*
-figure {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 100%;
-}
-
-.song-header img {
-    width: 100%;
-    height: 750px;
-    object-fit:cover;
-
-}
-
-.container {
-    max-width: 100%;
-    margin:auto;
-    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title h1{
     text-align: center;
-}
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 75%;
+  }
 
-.song-info {
+
+  .artist{
     display: flex;
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.song-info>h1 {
-    font-size: 50px;
-    
-}
-
-.song-info>p {
-    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
     color: #FFFFFF7A;
-    padding-top: 15px;
-}
-
-.controller{
+  }
+  
+  .controller{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-top: 50px;
-}
-.title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 50px;
-    font-size: 50px;
-}
-
-.shufflebutton{
-    order: 0;
-}
-
-.prevbutton{
-    order: 1;
-    margin-left: 800px;
-}
-
-.playbutton{
-    order: 2;
-    margin-left: 150px;
-}
-
-.nextbutton{
-    order: 3;
-    margin-left: 150px;
-}
-
-.repeatbutton{
-    order: 4;
-    margin-left: 800px;
-}
-
-// ------------------------------------------------Footer------------------------------------------------------
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 800px;
+  }
+  
+  .subcontroller{
+    gap: 1rem;
+  }
+  
+/*------------------------------------------------Footer------------------------------------------------------*/
 footer{
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-}
-  .wrapper{
-    border: 1px solid transparent;
-    padding: 30px;
+    gap:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5rem;
+  }
+  
+  footer a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color:#fff;
+  }
+  footer a i{
+   margin-right: 8px;
+  }
+  footer a:hover{
+    color: #1ED760;
+    transition: 0.2s ease;
+  
+  }
+  footer a i:hover{
+    background: #1ED760;
     border-radius: 20px;
-    background-color: #171711;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.4s ease;
+  }
+  
+  
+  /*Mobile adapatation*/
+  
+  @media screen and (max-width:960px){
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+        
+    }
+    
+    footer a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+    footer a i{
+       margin-right: 8px;
+    }
+    footer a:hover{
+        color: #1ED760;
+        transition: 0.2s ease;
+    
+    }
+    footer a i:hover{
+        background: #1ED760;
+        border-radius: 20px;
+        transition: 0.4s ease;
+    }  
   }
 
-  .details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    }
-    
-    .track-art {
-    margin: 25px;
-    height: 250px;
-    width: 250px;
-    border:2px solid 	#FFFAFA;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    -moz-box-shadow: 0px 6px 5px black;
-    -webkit-box-shadow: 0px 6px 5px black;
-    box-shadow: 0px 6px 5px black;
-    -moz-border-radius:190px;
-    -webkit-border-radius:190px;
-    border-radius:190px;
-    }
-    
-    .now-playing {
-    font-size: 1rem;
-    }
-    
-    .track-name {
-    font-size: 2.5rem;
-    }
-    
-    .track-artist {
-    margin-top: 5px;
-    font-size: 1.5rem;
-    }
-    
-    .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 30px;
-    }
-    .active{
-        color: black;
+
+  /*Mobile*/
+
+@media screen and (max-width: 600px){
+
+     /*------------------------------------------------Footer------------------------------------------------------*/
+     footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        max-width: auto;
+        height: 75px;
+        font-family: "Inter";
+        font-weight: 400;
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+        background-color: #222222;
     }
 
-    .repeat-track:hover,
-    .random-track:hover,
-    .playpause-track:hover,
-    .prev-track:hover,
-    .next-track:hover {
-    opacity: 1.0;
+    footer a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #222222;
+        justify-content: center;
+        flex-direction: column;
     }
-    
-    .slider_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .seek_slider, .volume_slider {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 5px;
-    background: #83A9FF;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    }
-    
-    .seek_slider::-webkit-slider-thumb,
-    .volume_slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 3px solid #3774FF;
-    cursor: grab;
-    border-radius: 100%;
-    }
-    
-    .seek_slider:hover,
-    .volume_slider:hover {
-    opacity: 1.0;
-    }
-    
-    .seek_slider {
-    width: 60%;
-    }
-    
-    .volume_slider {
-    width: 30%;
-    }
-    
-    .current-time,
-    .total-duration {
-    padding: 10px;
-    }
-    
-    i.fa-volume-down,
-    i.fa-volume-up {
-    padding: 10px;
-    }
-    
-    i,
-    i.fa-play-circle,
-    i.fa-pause-circle,
-    i.fa-step-forward,
-    i.fa-step-backward,
-    p {
-    cursor: pointer;
-    }
-    .randomActive{
-        color: black;
-    }
-    .rotate {
-        animation: rotation 8s infinite linear;
-    }
-    @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
-    }
-    .loader {
-      height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .loader .stroke{
-        background: #f1f1f1;
-        height: 150%;
-        width: 10px;
-        border-radius: 50px;
-        margin: 0 5px;
-        animation: animate 1.4s linear infinite;
-    }
-      @keyframes animate {
-        50% {
-          height: 20%;
-          background: #4286f4;
-        }
-    
-        100% {
-          background: #4286f4;
-          height: 100%;
-        }
-      }
-      .stroke:nth-child(1){
-          animation-delay: 0s;
-      }
-      .stroke:nth-child(2){
-        animation-delay: 0.3s;
-    }
-    .stroke:nth-child(3){
-        animation-delay: 0.6s;
-    }
-    .stroke:nth-child(4){
-        animation-delay: 0.9s;
-    }
-    .stroke:nth-child(5){
-        animation-delay: 0.6s;
-    }
-    .stroke:nth-child(6){
-        animation-delay: 0.3s;
-    }
-    .stroke:nth-child(7){
-        animation-delay: 0s;
-    }
-*/
 
+    footer a i {
+        margin-right: 8px;
+        background-color: #222222;
+        justify-content: center;
+    }
+
+    footer a:hover {
+        color: #1ED760;
+        transition: 0.2s ease;
+    }
+
+    footer a i:hover {
+        background: #1ED760;
+        border-radius: 20px;
+        transition: 0.4s ease;
+    }
+}
