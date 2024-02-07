@@ -4,12 +4,14 @@
     text-decoration: none; 
     color:  #fff;
     background: #181818;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*------------------------------------------------Navbar------------------------------------------------------*/
 .navbar{
-   
+    font-family: Arial, Helvetica, sans-serif;
     z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar_head{
@@ -80,6 +82,7 @@
     width: 169px;
     height: 165.45px;
     border-radius: 6px;
+    transition: 0.15s;
 }
 .play_list figure h2{
     padding: 5px;
@@ -89,12 +92,21 @@
     font-weight: 400;
 }
 
+.play_list figure{
+    cursor: pointer;
+}
+
+.play_list figure>img:hover{
+    transform:scale(1.05)
+}
+
 /*------------------------------------------------Footer------------------------------------------------------*/
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a{
@@ -125,6 +137,7 @@ footer a i:hover{
         align-items: center;
         justify-content: center;
         gap:50px;
+        
     }
     
     footer a{
@@ -132,6 +145,7 @@ footer a i:hover{
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
+        
     }
     footer a i{
        margin-right: 8px;
