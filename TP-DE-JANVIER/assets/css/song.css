@@ -1,56 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.big-container{
-    background: #151515;
-}
-.padding{
-    padding: 0 15px;
-
-}
-.img_background{
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    width: 100vw;
     height: 100vh;
     background-image: url("/TP-DE-JANVIER/assets/img/album/cover/songimage.jpg");
     background-size: cover;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
-}
-
-section,.title, .artist, .progress, .controller, .subcontroller, .fade {
+  }
+  
+  main {
+    height: 25%;
+    width: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  section, .title, .artist, .progress, .controller, .subcontroller, footer, .fade, .top {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  section {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5em;
   }
   
 
-.progress {
+
+  .progress {
     color: white;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 0.75em;
   }
-
-.progress .bar {
+  
+  .progress .bar {
     height: 2px;
     width: 62.5%;
     background-color: #C3C3C3;
   }
-
+  
   main, .fade {
     animation: bienvenualhotelwoaouh 1s;
   }
@@ -75,7 +75,13 @@ section,.title, .artist, .progress, .controller, .subcontroller, .fade {
     align-items: center;
     justify-content: space-around;
   }
-
+  
+  section {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5em;
+  }
+  
   .title {
     color: white;
     font-size: 2em;
@@ -85,7 +91,7 @@ section,.title, .artist, .progress, .controller, .subcontroller, .fade {
     justify-content: center;
   }
   
-  .title h1{
+  .title h1 {
     text-align: center;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -93,135 +99,40 @@ section,.title, .artist, .progress, .controller, .subcontroller, .fade {
     overflow: hidden;
     max-width: 75%;
   }
-
-
-  .artist{
-    display: flex;
-    text-align: center;
+  
+  .artist {
     margin-top: 10px;
     font-size: 1.5em;
     color: #FFFFFF7A;
   }
   
-  .controller{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%; 
-    max-width: 800px;
+
+  .top {
+    position: absolute;
+    top: 30px;
+    left: 5%;
+  }
+  .controller {
+    justify-content: space-around;
+    width: 90%;
   }
   
-  .subcontroller{
-    gap: 1rem;
+  .subcontroller {
+    gap: 1em;
   }
   
-/*------------------------------------------------Footer------------------------------------------------------*/
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:50px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5rem;
+  footer {
+    gap: 4em;
   }
   
-  footer a{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    color:#fff;
+  footer a {
+    text-decoration: none;
+    color: white;
+    width: 75px;
+    text-align: center;
   }
-  footer a i{
-   margin-right: 8px;
-  }
+  
   footer a:hover{
     color: #1ED760;
     transition: 0.2s ease;
-  
   }
-  footer a i:hover{
-    background: #1ED760;
-    border-radius: 20px;
-    transition: 0.4s ease;
-  }
-  
-  
-  /*Mobile adapatation*/
-  
-  @media screen and (max-width:960px){
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap:50px;
-        
-    }
-    
-    footer a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        
-    }
-    footer a i{
-       margin-right: 8px;
-    }
-    footer a:hover{
-        color: #1ED760;
-        transition: 0.2s ease;
-    
-    }
-    footer a i:hover{
-        background: #1ED760;
-        border-radius: 20px;
-        transition: 0.4s ease;
-    }  
-  }
-
-
-  /*Mobile*/
-
-@media screen and (max-width: 600px){
-
-     /*------------------------------------------------Footer------------------------------------------------------*/
-     footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        max-width: auto;
-        height: 75px;
-        font-family: "Inter";
-        font-weight: 400;
-        border-top-left-radius: 30%;
-        border-top-right-radius: 30%;
-        background-color: #222222;
-    }
-
-    footer a {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: #222222;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    footer a i {
-        margin-right: 8px;
-        background-color: #222222;
-        justify-content: center;
-    }
-
-    footer a:hover {
-        color: #1ED760;
-        transition: 0.2s ease;
-    }
-
-    footer a i:hover {
-        background: #1ED760;
-        border-radius: 20px;
-        transition: 0.4s ease;
-    }
-}

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+
+<html>
+    <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
@@ -9,58 +10,63 @@
         <link rel="stylesheet" href="/TP-DE-JANVIER/assets/css/reset.css">
         <link rel="stylesheet" href="/TP-DE-JANVIER/assets/css/icone.css">
         <link rel="stylesheet" href="/TP-DE-JANVIER/assets/css/song.css">
-</head>
-<body>
-    <main class="big-container">
-        <div class="padding">
-            <figure class="img_background">
-
-            </figure>
-            <main>
-                <section>
-                    <!-- Title + Buttons -->
-                    <div class="title">
-                        <a href="" class="likebutton"><i class="icone like"></i></a>
-                        <h1>Something in the Way</h1>
-                        <a href="" class="sharebutton"><i class="icone download "></i></a>
-                    </div>
-
-                    <!-- Artist -->
-                    <div class="artist">
-                        <p>Nirvana</p>
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="progress">
-                        <audio id="audio"><source src="/TP-DE-JANVIER/assets/music/nirvana.mp3" type="audio/mpeg"/></audio>
-                        <p>0:00</p>
-                        <div class="bar"></div>
-                        <p>3:51</p>
-                    </div>
-
-                    <!-- Controllers -->
-                    <div class="controller">
-                        <a  class="shufflebutton"><i class="control shuffle"></i></a>
-                        <div class="subcontroller">
-                            <a class="prevbutton"><i class="control prev"></i></a>
-                            <a id="playbutton" class="playbutton"><i class="control play"></i></a>
-                            <a class="nextbutton"><i class="control next"></i></a>
-                        </div>
-                        <a  class="repeatbutton"><i class="control repeat"></i></a>
-                    </div>
-                </section>
-            </main>
-
+        <script defer src="/TP-DE-JANVIER/assets/js/audio.js"></script>
+    </head>
+    <body>
+        <!-- top -->
+        <div class="top">
+            <a href="" class="likebutton"><i class="icone back"></i></a>
         </div>
-        <footer>
-            <a href="#"><i class="icone home"></i> Home</a>
-            <a href="#"><i class="icone liste"></i>Playlist</a>
-            <a href="#"><i class="icone search"></i>Search </a>
-            <a href="#"><i class="icone account"></i>Account</a>    
-        </footer>
+        <!-- Fade -->
+        <div class="fade">
+        
+        </div>
 
-    </main>
-    
-    <script defer src="/TP-DE-JANVIER/assets/js/audio.js"></script>
-</body>
+        <main>
+
+            <section>
+
+
+                <!-- Title + Buttons -->
+                <div class="title">
+                    <a href="" class="likebutton"><i class="icone like"></i></a>
+                    <h1>Something in the Way</h1>
+                    <a href="" class="sharebutton"><i class="icone download "></i></a>
+                </div>
+
+                <!-- Artist -->
+                <div class="artist">
+                    <p>Nirvana</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress">
+                    <audio id="audio"><source src="/TP-DE-JANVIER/assets/music/nirvana.mp3" type="audio/mpeg"/></audio>
+                    <p>0:00</p>
+                    <div class="bar"></div>
+                    <p>3:51</p>
+                </div>
+
+                <!-- Controllers -->
+                <div class="controller">
+                    <a  class="shufflebutton"><i class="control shuffle"></i></a>
+                    <div class="subcontroller">
+                        <a class="prevbutton"><i class="control prev"></i></a>
+                        <a id="playbutton" class="playbutton"><i class="control play"></i></a>
+                        <a class="nextbutton"><i class="control next"></i></a>
+                    </div>
+                    <a  class="repeatbutton"><i class="control repeat"></i></a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <a href="#">RELATED</a>
+                <a href="#">LYRICS</a>
+                <a href="#">NEXT</a> 
+            </footer>
+
+        </main>
+
+    </body>
 </html>
