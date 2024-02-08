@@ -15,7 +15,7 @@
     <body>
         <!-- top -->
         <div class="top">
-            <a href="" class="likebutton"><i class="icone back"></i></a>
+            <a href="\TP-DE-JANVIER\assets\html\main.html"><i class="icone back"></i></a>
         </div>
         <!-- Fade -->
         <div class="fade">
@@ -39,20 +39,24 @@
                     <p>Nirvana</p>
                 </div>
 
-                <!-- Progress Bar -->
-                <div class="progress">
-                    <audio id="audio"><source src="/TP-DE-JANVIER/assets/music/nirvana.mp3" type="audio/mpeg"/></audio>
-                    <p>0:00</p>
-                    <div class="bar"></div>
-                    <p>3:51</p>
+                <!-- Progress Bar--> 
+                <div class="progresswrapper">
+                    <div class="progressbg">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="progresstime">
+                        <div id="current_time">0:00</div>
+                        <div id="duration_time">0:00</div>
+                    </div>
                 </div>
-
+                 <audio id="audio" src="\TP-DE-JANVIER\assets\music\nirvana.mp3"></audio>
+                 
                 <!-- Controllers -->
                 <div class="controller">
                     <a  class="shufflebutton"><i class="control shuffle"></i></a>
                     <div class="subcontroller">
                         <a class="prevbutton"><i class="control prev"></i></a>
-                        <a id="playbutton" class="playbutton"><i class="control play"></i></a>
+                        <button class="control play" onClick="togglePlay()"></button>
                         <a class="nextbutton"><i class="control next"></i></a>
                     </div>
                     <a  class="repeatbutton"><i class="control repeat"></i></a>
