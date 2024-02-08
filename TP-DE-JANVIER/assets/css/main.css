@@ -70,6 +70,14 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+.playList_underline {
+  text-decoration: underline;
+  display: flex;
+  font-weight: 300;
+  justify-content: right;
+  align-items: right;
+  margin-left: auto;
+}
 
 .play_list_img{
   display: flex;
@@ -186,7 +194,7 @@
         padding: 30px 20px;
     }
 
-    .play_list h3 a {
+    .playList_underline {
         text-decoration: underline;
         display: flex;
         font-weight: 300;
